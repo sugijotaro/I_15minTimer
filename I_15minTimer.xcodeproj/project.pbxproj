@@ -13,6 +13,7 @@
 		0AE79DF32BB296D3009D97FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE79DF12BB296D3009D97FB /* Main.storyboard */; };
 		0AE79DF52BB296D4009D97FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE79DF42BB296D4009D97FB /* Assets.xcassets */; };
 		0AE79DF82BB296D4009D97FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE79DF62BB296D4009D97FB /* LaunchScreen.storyboard */; };
+		0AE79E002BB2971F009D97FB /* RendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE79DFF2BB2971F009D97FB /* RendaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0AE79DF42BB296D4009D97FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AE79DF72BB296D4009D97FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE79DF92BB296D4009D97FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE79DFF2BB2971F009D97FB /* RendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0AE79DEB2BB296D3009D97FB /* AppDelegate.swift */,
 				0AE79DED2BB296D3009D97FB /* SceneDelegate.swift */,
 				0AE79DEF2BB296D3009D97FB /* ViewController.swift */,
+				0AE79DFF2BB2971F009D97FB /* RendaViewController.swift */,
 				0AE79DF12BB296D3009D97FB /* Main.storyboard */,
 				0AE79DF42BB296D4009D97FB /* Assets.xcassets */,
 				0AE79DF62BB296D4009D97FB /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE79DF02BB296D3009D97FB /* ViewController.swift in Sources */,
+				0AE79E002BB2971F009D97FB /* RendaViewController.swift in Sources */,
 				0AE79DEC2BB296D3009D97FB /* AppDelegate.swift in Sources */,
 				0AE79DEE2BB296D3009D97FB /* SceneDelegate.swift in Sources */,
 			);
