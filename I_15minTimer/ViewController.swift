@@ -41,11 +41,25 @@ class ViewController: UIViewController {
     
     @IBAction func timerStart() {
         timer?.invalidate()
-        
+
         countdown = 900
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerCalled), userInfo: nil, repeats: true)
-        
         timer.fire()
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Reminder"
+        content.body = "水飲んでないよね！？"
+        content.sound = UNNotificationSound.default
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(countdown), repeats: false)
+
+        let request = UNNotificationRequest(identifier: "waterReminder", content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { (error) in
+            if let error = error {
+                print("Error \(error.localizedDescription)")
+            }
+        }
     }
 }
